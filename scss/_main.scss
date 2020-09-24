@@ -1,0 +1,38 @@
+.post{
+    padding: 46px 0 104px;
+   
+
+        
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__info{
+        flex: 1 1 33.33%;
+        padding: 0 33px;
+        margin: 0 0 40px 0;
+    }
+}
+
+
+@media (max-width:$phoneWidth){
+    .post{
+        padding: 46px 0 50px;
+       
+    
+            
+        &__list{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    
+        &__info{
+            flex: 1 1 100%;
+            padding: 0 33px;
+            margin: 0 0 40px 0;
+        }
+    }
+    
+}
+

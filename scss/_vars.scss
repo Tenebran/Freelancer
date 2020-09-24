@@ -1,0 +1,34 @@
+
+// Weights
+$desktopWidth: 1280px;
+$smDesktopWight: 980px;
+$tableWight: 768px;
+$phoneWidth: 480px;
+$smPhoneWight: 320px;
+
+
+// Main color
+$mainColor: #fa5c65;
+$headerColor: #263742;
+$mainWhite: #ffffff;
+
+
+
+@mixin title {
+    font-family: 'Montserrat';
+    color: #314a5b;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+@mixin text{
+    font-family: 'Open Sans';
+    color: #9aa0ab;
+    font-weight: 400;
+}
+@mixin more {
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 500;
+  color: #fa5c65;
+  text-transform: uppercase;
+}

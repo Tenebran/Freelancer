@@ -1,0 +1,44 @@
+.team{
+
+    &__title{
+        @include title;
+        font-size: 32px;
+        font-weight: bold;
+        line-height: 53.5px;
+        letter-spacing: -0.64px;
+    }
+
+    &__title::after{
+            content: ".";
+            color: $mainColor;
+        }
+    
+    &__subtitle{
+        @include text;
+        font-size: 16px;
+        line-height: 20px;
+        margin: 0 0 41px 0;
+    }
+
+    &__name{
+        font-family: 'Montserrat';
+        color: #314a5b;
+        font-weight: 700;
+        font-size: 21.5px;
+        line-height: 53.5px;
+        letter-spacing: -0.43px;
+    }
+
+    &__job{
+        @include text;
+        font-size: 14px;
+        line-height: 20px;
+        color: $mainColor;
+    }
+
+    &__text{
+        @include text;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}

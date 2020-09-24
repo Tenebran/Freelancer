@@ -1,0 +1,117 @@
+.content_conteiner__header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header{
+height: 74px;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+
+&__logo{
+    font-family: 'Domine';
+    background-color: $mainColor;
+    padding: 43px 14px 11px;
+    border-radius: 0 0 8px 8px;
+    font-size: 20px;
+    font-weight: 700;
+   
+    &__icon{
+        color: $mainWhite;
+
+        &:after{
+            content: ".";
+            color: #314a5b;
+        }
+    }
+}
+&__link{
+    display: flex;
+    
+}
+&__nav{
+    margin: 29px 0 0 0;
+font-family: 'Montserrat';
+font-size: 14px;
+font-weight: 400;
+text-transform: uppercase;
+
+    &__link{
+        padding: 0 30px 0 0;
+        color: $headerColor;
+    }
+
+}
+&__social__icon{
+    margin: 28px 0 0 0;
+    padding: 0 0 0 23px;
+    color: $mainColor;
+
+&:not(:last-child){
+    padding: 0 0 0 0;
+}
+}
+}
+
+@media (max-width: $tableWight){
+    
+    .content_conteiner__header{
+        height: 50px;
+    }
+   
+    .header__button_open + .header__link{
+        display: block;
+    }
+
+    .header__link{
+        display: none;
+        background-color: #fff;  
+    }
+    .header{
+        position: fixed;
+        background-color: rgba(67, 66, 68, 0.911);
+        height: 50px;
+        &__logo{
+            padding: 20px 14px 11px;
+        }
+
+        &__button{
+            width: 48px ;
+            height: 48px;
+            background: url(../image/icon/icons8-menu-48.png) no-repeat;
+            cursor: pointer;
+            &_open{
+                background: url(../image/icon/icons8-delete-48.png);
+            }
+        }
+        &__link{
+            position: fixed;
+            flex-direction: column;
+            top: 50px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 0px 0 0;
+        }
+     &__nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__link{
+            margin: 0 0 20px;
+        }
+    }
+&__social{
+    display: flex;
+justify-content: center;
+margin-left: -40px;
+
+&__icon{
+    font-size: 26px ;
+}
+}
+}
+}

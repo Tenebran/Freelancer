@@ -1,0 +1,46 @@
+.content_conteiner__footer{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #b9c0c636;
+    padding: 35px  10px;
+}
+
+.footer{
+
+    &__list{
+        color: #b9c0c6;
+        cursor: pointer;
+    
+    &__icon{
+        
+
+        &:not(:last-child){
+            padding: 0 22px 0 0;
+        }
+    }
+}
+&__title{
+    font-family: 'Open Sans';
+    font-size: 13px;
+    color: #b9c0c6;
+ 
+}
+}
+
+
+
+@media (max-width:$tableWight){
+    .content_conteiner__footer{
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+    .footer{
+        &__icon{
+            width: 100%;
+            text-align: center;
+            font-size: 30px;
+           padding-bottom: 20px;
+        }
+    }
+}

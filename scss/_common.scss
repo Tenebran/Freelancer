@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Domine';
+    src:  url('../font/Domine.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../font/montserrat.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src:  url('../font/opensans.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+.content_conteiner{
+    max-width: 960px;
+    padding: 0 10px;
+    margin: 0 auto;
+
+}
+.fa-arrow-right{
+    padding: 0 0 0 7px;
+}
